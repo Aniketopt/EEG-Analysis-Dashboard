@@ -31,8 +31,8 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# Visible title on the app
-st.title("🧠 STEW EEG Analysis Dashboard")
+st.markdown("<h1 style='text-align: center;'>🧠 STEW EEG Analysis Dashboard</h1>", unsafe_allow_html=True)
+
 
 # Apply custom CSS
 st.markdown("""
