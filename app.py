@@ -21,13 +21,18 @@ from brain_visualization import (
     create_band_topography, create_3d_time_series
 )
 
-# Set up page configuration
+#import streamlit as st
+
+# Page configuration for browser tab
 st.set_page_config(
     page_title="STEW EEG Analysis Dashboard",
     page_icon="🧠",
     layout="wide",
     initial_sidebar_state="expanded"
 )
+
+# Visible title on the app
+st.title("🧠 STEW EEG Analysis Dashboard")
 
 # Apply custom CSS
 st.markdown("""
