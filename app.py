@@ -31,7 +31,12 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-st.markdown("<h1 style='text-align: center;'>🧠 STEW EEG Analysis Dashboard</h1>", unsafe_allow_html=True)
+# Centered title using markdown and HTML inside a wide container
+with st.container():
+    st.markdown(
+        "<h1 style='text-align: center;'>🧠 STEW EEG Analysis Dashboard</h1>",
+        unsafe_allow_html=True
+    )
 
 
 # Apply custom CSS
