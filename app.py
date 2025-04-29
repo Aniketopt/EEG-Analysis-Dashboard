@@ -347,8 +347,17 @@ with st.sidebar:
     """, unsafe_allow_html=True)
 
 # Main content area - only show title and intro if on the data loading page
+# if selected_page == "Data Loading":
+#     st.markdown('<h1 style="text-align: center;">🧠 STEW EEG Analysis Dashboard</h1>', unsafe_allow_html=True)
 if selected_page == "Data Loading":
-    st.markdown('<h1 style="text-align: center;">🧠 STEW EEG Analysis Dashboard</h1>', unsafe_allow_html=True)
+    st.markdown(
+        """
+        <div style="text-align: center; margin-top: 20px; margin-bottom: 20px;">
+            <h1 style="color: white;">🧠 STEW EEG Analysis Dashboard</h1>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
 
     # Animated dashboard introduction
     intro_text = """
